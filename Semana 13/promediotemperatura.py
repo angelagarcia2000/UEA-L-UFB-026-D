@@ -1,7 +1,7 @@
 #calcular el promedio de de temperatura de una ciudad
 
 temperaturas = [
-    [   # Ciudad Tena
+    [   # Ciudad Lago Agrio
         [   # Semana 1
             {"dia": "Lunes", "temp": 32},
             {"dia": "Martes", "temp": 55},
@@ -36,16 +36,28 @@ temperaturas = [
             {"dia": "Jueves", "temp": 72},
             {"dia": "Viernes", "temp": 24},
             {"dia": "Sábado", "temp": 82},
-            {"dia": "Domingo", "temp": 21}
+            {"dia": "Domingo", "temp": 21},
+
         ]]]
 
+def calcular_promedio(suma_acumulada, total_acumulado):
+    return round(suma_acumulada / total_acumulado, 2)
 
-# Calcular el promedio de temperaturas para cada ciudad y semana
-
-
+# Calcular el promedio de temperaturas para la ciudad y cada semana
+ciudad_de = "Lago Agrio"
 for ciudad in temperaturas:
+    print("Ciudad de:",ciudad_de)
+
+    no_semana = 0
+    suma_promedio = 0
     for semana in ciudad:
+        no_semana += 1
         suma = 0
         for dia in semana:
             suma += dia['temp']
-        print(suma,)
+        promedio = calcular_promedio(suma, len(semana))
+        suma_promedio += promedio
+        print(f'El promedio de la semana No. {no_semana} es: {promedio}')
+    promedio_ciudad = calcular_promedio(suma_promedio, len(ciudad))
+    print(f'El promedio mensual es: {promedio_ciudad}')
+
