@@ -15,15 +15,15 @@ total1= compra1-descuto1
 total2= compra2-descuento2
 
 #imprimir resultados de la primera compra
-print("\n primer resultado")
+print("\n PRIMER RESULTADO")
 
-print(f"total compra 1: ${compra1}")
-print(f"el descuento es:{descuto1:.2f}")
-print(f"total de la primera compra= ${total1}")
+print(f"Total compra 1: ${compra1}")
+print(f"El descuento es:{descuto1:.2f}")
+print(f"Total de la primera compra= ${total1}")
 
 #Imprimir resultados de la segunda compra
-print(f"\n segundo resultado")
+print(f"\n SEGUNDO RESULTADO")
 
-print(f"total compra 2: ${compra2}")
-print(f"el descuento es:{descuento2:.2f}")
-print(f"total de la primera compra= ${total2}")
+print(f"Total compra 2: ${compra2}")
+print(f"El descuento es:{descuento2:.2f}")
+print(f"Total de la primera compra= ${total2}")
